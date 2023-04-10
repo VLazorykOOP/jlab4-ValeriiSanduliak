@@ -80,11 +80,22 @@ public class Task1 {
         String output_filename = in.next();
         File output_file = new File(output_filename);
         while (!output_file.exists()) {
-            System.out.print("File not found. Input outputFile path:");
-            output_filename = in.next();
-            output_file = new File(output_filename);
+            System.out.print("File not found. Create a new file? (y/n):");
+            String answer = in.next();
+            if (answer.equalsIgnoreCase("y")) {
+                try {
+                    output_file.createNewFile();
+                    System.out.println("File output created!!");
+                } catch (IOException e) {
+                    System.out.println("Error message: " + e.getMessage());
+                }
+            } else {
+                System.out.print("Input output file path:");
+                output_filename = in.next();
+                output_file = new File(output_filename);
+            }
         }
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(output_file))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(output_filename))) {
             for (Map.Entry<String, Integer> i : countsWord.entrySet()) {
                 bw.write(i.getKey() + " : " + i.getValue());
                 bw.newLine();

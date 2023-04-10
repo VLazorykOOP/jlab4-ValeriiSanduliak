@@ -24,7 +24,9 @@ public class Main {
                 case 1:
                     Task1.task1();
                     break;
-                //case 2 : Task2(); break;
+                case 2:
+                    Task2.task2();
+                    break;
                 case 3:
                     return;
             }
