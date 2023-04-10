@@ -1,4 +1,4 @@
-Lorem : 1
 finibus : 2
 hendrerit : 2
+Lorem : 1
 tincidunt : 4
