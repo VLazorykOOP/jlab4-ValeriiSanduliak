@@ -17,7 +17,7 @@ public class Task2 {
             text_file = new File(text_filename);
         }
         System.out.println("-----------------------------------");
-        System.out.println("Text path: D:\\Education\\2-course\\Java\\jlab4-ValeriiSanduliak\\files\\output2.txt");
+        System.out.println("Output path: D:\\Education\\2-course\\Java\\jlab4-ValeriiSanduliak\\files\\output2.txt");
         System.out.print("Input output file path:");
         String output_filename = in.next();
         File output_file = new File(output_filename);

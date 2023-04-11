@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.TreeMap;
 import java.util.Scanner;
 
+
 public class Task1 {
     static Set<String> readWordsFromFile(String words_filename) {
         Set<String> words = new HashSet<>();
@@ -75,7 +76,7 @@ public class Task1 {
             System.out.println(i.getKey() + " : " + i.getValue());
         }
         System.out.println("-----------------------------------");
-        System.out.println("Text path: D:\\Education\\2-course\\Java\\jlab4-ValeriiSanduliak\\files\\output.txt");
+        System.out.println("Output path: D:\\Education\\2-course\\Java\\jlab4-ValeriiSanduliak\\files\\output.txt");
         System.out.print("Input output file path:");
         String output_filename = in.next();
         File output_file = new File(output_filename);
